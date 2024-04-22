@@ -1,0 +1,362 @@
+{
+    "Title": "Escape Room",
+    "Credits": "Created by William Gonzalez (wimgonz@ucsc.edu).",
+    "InitialLocation": "bed",
+    "Locations": {
+        "bed": {
+            "Body": "You wake up in a bed. You remember that you entered yourself into an escape room trial group.",
+            "Choices": [
+                {
+                    "Text": "Take a look around.",
+                    "Target": "start"
+                }
+            ]
+        },
+        "start": {
+            "Body": "You are checking out your surroundings and you see...\nA fairly plain green-painted room that has very simple furnishings and a green door.\nThere are four points of interest in the room.",
+            "Choices": [
+                {
+                    "Text": "Walk over to the next door.",
+                    "Target": "locked door"
+                },
+                {
+                    "Text": "Walk over to the bookcase.",
+                    "Target": "bookcase"
+                },
+                {
+                    "Text": "Walk over to the office desk.",
+                    "Target": "office desk"
+                },
+                {
+                    "Text": "Walk over to the fridge.",
+                    "Target": "fridge"
+                }
+            ]
+        },
+        "locked door": {
+            "Body": "The door seems to be locked with no way of opening it.",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "start"
+                }
+            ]
+        },
+        "bookcase": {
+            "Body": "It is a simple bookcase. It has some popular old books that you recognize.",
+            "Choices": [
+                {
+                    "Text": "Walk back to the center of the room.",
+                    "Target": "start"
+                }
+            ]
+        },
+        "office desk": {
+            "Body": "It is a simple brown wooden office desk. It seems like the type of desk a principal would sit at.",
+            "Choices": [
+                {
+                    "Text": "Walk back to the center of the room.",
+                    "Target": "start"
+                }
+            ]
+        },
+        "fridge": {
+            "Body": "You open the fridge.\nThere are three items in the fridge.\nA bottle of water.\nA sandwich that has a large amount of green lettuce inside it. Also, there is a strange lump on the sandwich.\nA container of chocolate pudding.",
+            "Choices": [
+                {
+                    "Text": "Walk back to the center of the room.",
+                    "Target": "start"
+                },
+                {
+                    "Text": "Poke the sandwich.",
+                    "Target": "sandwich"
+                }
+            ]
+        },
+        "sandwich": {
+            "Body": "The green locked door swings open.",
+            "Choices": [
+                {
+                    "Text": "Walk over to the now open door.",
+                    "Target": "open green door"
+                }
+            ]
+        },
+        "open green door": {
+            "Body": "In the next room, you can see a room that is fairly similar to the first yet it is light blue instead.\nThere are four points of interest in the room.",
+            "Choices": [
+                {
+                    "Text": "Walk over to the fish tank.",
+                    "Target": "fish tank"
+                },
+                {
+                    "Text": "Walk over to the potted plant.",
+                    "Target": "potted plant"
+                },
+                {
+                    "Text": "Walk over to the cabinets.",
+                    "Target": "cabinets"
+                },
+                {
+                    "Text": "Walk over to the next door.",
+                    "Target": "locked blue door"
+                }
+            ]
+        },
+        "fish tank": {
+            "Body": "There seems to be a suspicious mound at the bottom of the fish tank.",
+            "Choices": [
+                {
+                    "Text": "Walk back to the center of the room.",
+                    "Target": "open green door"
+                }
+            ],
+            "foundKey" : 
+                {
+                    "Text": "Grab at the mound.",
+                    "Target": "blue key"
+                }
+        },
+        "potted plant": {
+            "Body": "It is just an ordinary potted plant. The plant has some blooming white flowers. You don't really know the name of them.",
+            "Choices": [
+                {
+                    "Text": "Walk back to the center of the room.",
+                    "Target": "open green door"
+                }
+            ]
+        },
+        "cabinets": {
+            "Body": "It is an ordinary set of cabinets. The cabinets are made out of a nice piece of maple wood that is lacquered.",
+            "Choices": [
+                {
+                    "Text": "Walk back to the center of the room.",
+                    "Target": "open green door"
+                }
+            ]
+        },
+        "locked blue door": {
+            "Body": "The door seems to be locked with no way of opening it.",
+            "Choices": [
+                {
+                    "Text": "Walk back to the center of the room.",
+                    "Target": "open green door"
+                }
+            ],
+            "foundKey" : 
+                {
+                    "Text": "Unlock the blue door.",
+                    "Target": "open blue door"
+                }
+        },
+        "blue key": {
+            "Body": "You picked up a blue key.",
+            "Choices": [
+                {
+                    "Text": "Walk back to the center of the room.",
+                    "Target": "open green door"
+                }
+            ]
+        },
+        "open blue door": {
+            "Body": "Inside the next room, you can see a solid yellow room.\nThere are four points of interest in the room.",
+            "Choices": [
+                {
+                    "Text": "Walk over to the reclining chair",
+                    "Target": "reclining chair"
+                },
+                {
+                    "Text": "Walk over to the lamp.",
+                    "Target": "lamp"
+                },
+                {
+                    "Text": "Walk over to the gumball dispenser.",
+                    "Target": "A gumball dispenser"
+                }
+            ],
+            "foundKey":
+                {
+                    "Text": "Walk through the yellow door of light.",
+                    "Target": "open yellow door"
+                }
+        },
+        "reclining chair": {
+            "Body": "It is a simple reclining chair.\nIt looks comfortable.",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open blue door"
+                }
+            ]
+        },
+        "lamp": {
+            "Body": "The lamp seems to have a yellow switch on it.",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open blue door"
+                }
+            ],
+            "foundKey":
+                {
+                "Text": "Turn on the lamp.",
+                "Target": "lit lamp"
+                }
+        },
+        "A gumball dispenser": {
+            "Body": "It is a simple gumball dispenser.\nIt only has mint gum.",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open blue door"
+                }
+            ]
+        },
+        "lit lamp": {
+            "Body": "The lamp's light reveals a yellow door.",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open blue door"
+                }
+            ]
+        },
+        "open yellow door": {
+            "Body": "In the next room, you can see a room that is fairly similar to the other rooms yet it is completely red instead.\nThere are four points of interest in the room.",
+            "Choices": [
+                {
+                    "Text": "Walk over to the coat rack.",
+                    "Target": "coat rack"
+                },
+                {
+                    "Text": "Walk over to the dining table.",
+                    "Target": "dining table"
+                },
+                {
+                    "Text": "Walk over to the red carpet.",
+                    "Target": "red carpet"
+                },
+                {
+                    "Text": "Walk over to the next door.",
+                    "Target": "locked red door"
+                }
+            ]
+        },
+        "coat rack": {
+            "Body": "It is a simple coat rack.\nThere are no coats on it.",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open yellow door"
+                }
+            ]
+        },
+        "dining table": {
+            "Body": "It is a simple dining table.\nThere are no utensils or plates.",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open yellow door"
+                }
+            ]
+        },
+        "red carpet": {
+            "Body": "There seems to be a large bump in the center of the red carpet.\nDo you step on it?",
+            "Choices": [
+                {
+                    "Text": "Step on the bump.",
+                    "Target": "red button"
+                },
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open yellow door"
+                }
+            ]
+        },
+        "locked red door": {
+            "Body": "The door seems to be locked with no way of opening it.",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open yellow door"
+                }
+            ]
+        },
+        "red button": {
+            "Body": "The next door swings open.",
+            "Choices": [
+                {
+                    "Text": "Walk over to the now open door.",
+                    "Target": "open red door"
+                }
+            ]
+        },
+        "open red door": {
+            "Body": "In the next room, you can see a room that is fairly similar to the other rooms yet it is jet black instead.\nThere are three points of interest in the room.",
+            "Choices": [
+                {
+                    "Text": "Walk over to the dresser.",
+                    "Target": "dresser"
+                },
+                {
+                    "Text": "Walk over to the lawn chair.",
+                    "Target": "lawn chair"
+                },
+                {
+                    "Text": "Walk over to the next door.",
+                    "Target": "black door"
+                }
+            ]
+        },
+        "dresser": {
+            "Body": "It is a simple brown wooden dresser. This dresser is made out of a dark oak.",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open red door"
+                }
+            ]
+        },
+        "lawn chair": {
+            "Body": "It is a simple lawn chair. The chair has a green mesh with an aluminum frame.",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open red door"
+                }
+            ]
+        },
+        "black door": {
+            "Body": "To your absolute surprise, this door is actually not locked.\nDo you open it?",
+            "Choices": [
+                {
+                    "Text": "Walk back over to the center of the room.",
+                    "Target": "open red door"
+                },
+                {
+                    "Text": "Open the door.",
+                    "Target": "End of the test"
+                }
+            ]
+        },
+        "End of the test": {
+            "Body": "You open the door and you see a man holding a sign saying congradulations. He is also holding a large check like the ones you see on television.\nDo you celebrate or not do anything?",
+            "Choices": [
+                {
+                    "Text": "Not do anything.",
+                    "Target": "not do anything"
+                },
+                {
+                    "Text": "Say \"Yippee.\"",
+                    "Target": "celebrate"
+                }
+            ]
+        },
+        "not do anything": {
+            "Body": "The man says,\"I thought you would've been happier after winning the prize.\"\nThe test ends there."
+        },
+        "celebrate": {
+            "Body": "The man says,\"That is the spirit!\"\nThe test ends there."
+        }
+    }
+}
